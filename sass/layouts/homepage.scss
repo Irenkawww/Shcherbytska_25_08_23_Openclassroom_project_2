@@ -15,18 +15,30 @@ img {
     margin: 15px;
 }
 .location {
-    padding: 15px;
+    @include section-space;
     font-weight: bolder;
 }
 .bookAndExplore h1 {
     font-size: $titles-font-size;
-    padding: 20px;
+    @include section-space;
 }
 .bookAndExplore p {
     font-weight: lighter;
-    padding: 20px;
+    @include section-space;
 }
 .bookAndExplore {
     background-color: $light-background-color;
     padding: 0 0 40px 0;
+}
+.howItWorks {
+    @include section-space;
+    background-color: white;
+    text-align: left;
+}
+.howItWorks h1 {
+@include section-space;
+font-size: $titles-font-size;
+}
+.fa-solid {
+    color:$dark-background-color;
 }

@@ -67,20 +67,37 @@ textarea {
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  -webkit-box-shadow: 0 0 20px #eee;
-          box-shadow: 0 0 20px #eee;
   border-radius: 25px;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.list {
+  width: 300px;
+  padding: 15px;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: 10px;
+  background-color: rgba(243, 243, 243, 0.914);
+  font-weight: bolder;
+}
+
+.list:hover {
+  background-color: #eadef9;
 }
 
 body {
   text-align: center;
-  background-color: rgb(229, 229, 229);
+  background-color: rgba(221, 220, 220, 0.723);
   font-family: "Roboto", sans-serif;
 }
 
@@ -115,7 +132,7 @@ img {
 }
 
 .location {
-  padding: 15px;
+  padding: 20px;
   font-weight: bolder;
 }
 
@@ -130,6 +147,21 @@ img {
 }
 
 .bookAndExplore {
-  background-color: rgba(255, 255, 255, 0.796);
+  background-color: rgba(243, 243, 243, 0.914);
   padding: 0 0 40px 0;
+}
+
+.howItWorks {
+  padding: 20px;
+  background-color: white;
+  text-align: left;
+}
+
+.howItWorks h1 {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.fa-solid {
+  color: rgb(131, 131, 131);
 }/*# sourceMappingURL=main.css.map */
