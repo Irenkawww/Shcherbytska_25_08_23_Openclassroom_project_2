@@ -1,0 +1,17 @@
+.btn {
+    display: block;
+    margin: auto;
+    background-image: linear-gradient(to right, $primary-color 0%, $secondary-color 51%, $primary-color 100%);
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 25px;
+}
+.btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}

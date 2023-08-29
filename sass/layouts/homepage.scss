@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-color: $middle-dark-background-color;
+    font-family: $text-fonts;
+}
+header {
+    @include align-center;
+    box-shadow: $box-shadow;
+    background-color:white;
+}
+img {
+    @include align-center;
+    width:150px;
+    height: auto;
+    margin: 15px;
+}
+.location {
+    padding: 15px;
+    font-weight: bolder;
+}
+.bookAndExplore h1 {
+    font-size: $titles-font-size;
+    padding: 20px;
+}
+.bookAndExplore p {
+    font-weight: lighter;
+    padding: 20px;
+}
+.bookAndExplore {
+    background-color: $light-background-color;
+    padding: 0 0 40px 0;
+}

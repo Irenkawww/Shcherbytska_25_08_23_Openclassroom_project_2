@@ -40,7 +40,6 @@ h4,
 h5,
 h6 {
   font-size: 1em;
-  font-weight: normal;
 }
 
 a {
@@ -56,4 +55,81 @@ textarea {
   outline: none;
 }
 
-/* The end of Reseting CSS *//*# sourceMappingURL=main.css.map */
+/* The end of Reseting CSS */
+.btn {
+  display: block;
+  margin: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9356DC), color-stop(51%, #FF79DA), to(#9356DC));
+  background-image: linear-gradient(to right, #9356DC 0%, #FF79DA 51%, #9356DC 100%);
+  padding: 15px 45px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: auto;
+  margin: 15px;
+}
+
+.location {
+  padding: 15px;
+  font-weight: bolder;
+}
+
+.bookAndExplore h1 {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.bookAndExplore p {
+  font-weight: lighter;
+  padding: 20px;
+}
+
+.bookAndExplore {
+  background-color: rgba(255, 255, 255, 0.796);
+  padding: 0 0 40px 0;
+}/*# sourceMappingURL=main.css.map */
