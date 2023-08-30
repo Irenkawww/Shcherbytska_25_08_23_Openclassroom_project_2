@@ -2,45 +2,51 @@ body {
     text-align: center;
     background-color: $middle-dark-background-color;
     font-family: $text-fonts;
+    h1 {
+        @include section-space;
+        font-size: $titles-font-size;
+    }
 }
 header {
     @include align-center;
     box-shadow: $box-shadow;
     background-color:white;
-}
-img {
-    @include align-center;
-    width:150px;
-    height: auto;
-    margin: 15px;
+    a {
+        @include logo;
+        margin: 15px;
+        color:black;
+    }
+    a:hover {
+        color: black;
+    }
 }
 .location {
     @include section-space;
     font-weight: bolder;
 }
-.bookAndExplore h1 {
-    font-size: $titles-font-size;
-    @include section-space;
-}
-.bookAndExplore p {
-    font-weight: lighter;
-    @include section-space;
-}
 .bookAndExplore {
     background-color: $light-background-color;
     padding: 0 0 40px 0;
+    p {
+        font-weight: lighter;
+        @include section-space;
+    }
 }
 .howItWorks {
     @include section-space;
     background-color: white;
     text-align: left;
+    .fa-solid {
+        padding-right: 10px;
+    }
+    .fa-solid {
+        color: $dark-background-color;
+    }
 }
-.howItWorks h1 {
-@include section-space;
-font-size: $titles-font-size;
-}
-.fa-solid {
-    color:$dark-background-color;
+.restoraunts-section {
+    @include section-space;
+    background-color: $light-background-color;
+    text-align: left;
 }
 footer {
     background-color: $footer-background-color;
@@ -58,8 +64,7 @@ footer {
         height: 16px;
     }
     .logo {
-        font-family: $logo-titles-fonts;
-        font-weight: 300;
+        @include logo;
         padding-bottom: 10px;
     }
 }

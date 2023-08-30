@@ -6,3 +6,8 @@
 @mixin section-space {
     padding: 20px;
 }
+@mixin logo {
+    font-family: $logo-titles-fonts;
+    font-weight: 300;
+    font-size: $titles-font-size;
+}

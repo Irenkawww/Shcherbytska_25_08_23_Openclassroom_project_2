@@ -1,0 +1,57 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content:center;
+    border-radius: 25px;
+    box-shadow: $box-darker-shadow;
+    a {
+        background-color: white;
+        border: 7px solid white;
+        border-radius: 25px;
+        box-sizing: border-box;
+        text-align: left;
+        line-height: 20px;
+       }
+    img {
+        display: flex;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    .fa-heart {
+        color: $dark-background-color;
+    }
+    .fa-heart:hover {
+        color: $primary-color;
+    }
+    .fa-heart:visited {
+        color: $primary-color;
+    }
+    .restoraunt {
+        padding-left: 3px;
+        color: black;
+    }
+    i {
+        padding-left: 10px;
+    }
+    .text-heart {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px;
+    }
+    .restaurant-name {
+       font-weight: bold;
+    }
+    .restaurant-location {
+       font-weight: lighter;
+    }
+}

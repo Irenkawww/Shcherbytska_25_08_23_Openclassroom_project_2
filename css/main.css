@@ -95,10 +95,98 @@ textarea {
   background-color: #eadef9;
 }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.card a {
+  background-color: white;
+  border: 7px solid white;
+  border-radius: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  line-height: 20px;
+}
+.card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+.card .fa-heart {
+  color: rgb(131, 131, 131);
+}
+.card .fa-heart:hover {
+  color: #9356DC;
+}
+.card .fa-heart:visited {
+  color: #9356DC;
+}
+.card .restoraunt {
+  padding-left: 3px;
+  color: black;
+}
+.card i {
+  padding-left: 10px;
+}
+.card .text-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px;
+}
+.card .restaurant-name {
+  font-weight: bold;
+}
+.card .restaurant-location {
+  font-weight: lighter;
+}
+
 body {
   text-align: center;
   background-color: rgba(221, 220, 220, 0.723);
   font-family: "Roboto", sans-serif;
+}
+body h1 {
+  padding: 20px;
+  font-size: 20px;
 }
 
 header {
@@ -115,20 +203,15 @@ header {
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
 }
-
-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 150px;
-  height: auto;
+header a {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+  font-size: 20px;
   margin: 15px;
+  color: black;
+}
+header a:hover {
+  color: black;
 }
 
 .location {
@@ -136,19 +219,13 @@ img {
   font-weight: bolder;
 }
 
-.bookAndExplore h1 {
-  font-size: 20px;
-  padding: 20px;
-}
-
-.bookAndExplore p {
-  font-weight: lighter;
-  padding: 20px;
-}
-
 .bookAndExplore {
   background-color: rgba(243, 243, 243, 0.914);
   padding: 0 0 40px 0;
+}
+.bookAndExplore p {
+  font-weight: lighter;
+  padding: 20px;
 }
 
 .howItWorks {
@@ -156,14 +233,17 @@ img {
   background-color: white;
   text-align: left;
 }
-
-.howItWorks h1 {
-  padding: 20px;
-  font-size: 20px;
+.howItWorks .fa-solid {
+  padding-right: 10px;
+}
+.howItWorks .fa-solid {
+  color: rgb(131, 131, 131);
 }
 
-.fa-solid {
-  color: rgb(131, 131, 131);
+.restoraunts-section {
+  padding: 20px;
+  background-color: rgba(243, 243, 243, 0.914);
+  text-align: left;
 }
 
 footer {
@@ -190,5 +270,6 @@ footer .fa-utensils, footer .fa-handshake-angle {
 footer .logo {
   font-family: "Shrikhand", cursive;
   font-weight: 300;
+  font-size: 20px;
   padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
