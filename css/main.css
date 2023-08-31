@@ -63,6 +63,7 @@ textarea {
   background-image: linear-gradient(to right, #9356DC 0%, #FF79DA 51%, #9356DC 100%);
   padding: 15px 45px;
   text-align: center;
+  font-size: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-size: 200% auto;
