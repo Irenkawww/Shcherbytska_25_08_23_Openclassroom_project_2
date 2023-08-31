@@ -8,7 +8,7 @@ body {
     }
 }
 header {
-    @include align-center;
+    @include section-space;
     box-shadow: $box-shadow;
     background-color:white;
     a {
@@ -42,6 +42,26 @@ header {
     .fa-solid {
         color: $dark-background-color;
     }
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.numbers {
+    position: relative;
+    left: 18px;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    color:white;
+    text-align: center;
+    align-items: center;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 16px;
 }
 .restoraunts-section {
     @include section-space;

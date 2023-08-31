@@ -94,6 +94,10 @@ textarea {
 .list:hover {
   background-color: #eadef9;
 }
+.list:hover > i {
+  color: #9356DC;
+  background-color: #eadef9;
+}
 
 .cards {
   display: -webkit-box;
@@ -101,14 +105,15 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -134,7 +139,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   width: 300px;
-  height: 200px;
+  height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-right-radius: 25px;
@@ -190,15 +195,7 @@ body h1 {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 20px;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -238,6 +235,36 @@ header a:hover {
 }
 .howItWorks .fa-solid {
   color: rgb(131, 131, 131);
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.numbers {
+  position: relative;
+  left: 18px;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9356DC;
+  border: 1px solid #9356DC;
+  border-radius: 16px;
 }
 
 .restoraunts-section {
