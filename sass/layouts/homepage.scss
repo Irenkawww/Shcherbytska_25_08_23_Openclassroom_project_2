@@ -65,6 +65,7 @@ header {
 }
 .restoraunts-section {
     @include section-space;
+    @include align-center;
     background-color: $light-background-color;
     text-align: left;
 }
@@ -72,7 +73,10 @@ footer {
     background-color: $footer-background-color;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    justify-content: flex-start;
+    .align-flexible-row, .align-flexible-column {
+       @include align-center;
+    }
     a {
     color:white;
     }
@@ -87,4 +91,56 @@ footer {
         @include logo;
         padding-bottom: 10px;
     }
+}
+
+@media (min-width: $breakpoint-mobile) {
+.howItWorks, .restoraunts-section, .bookAndExplore {
+    @include align-center;
+    h1 {
+        font-size: $bigger-titles-font-size;
+        }
+}
+.logo {
+    font-size: $bigger-titles-font-size;
+}
+.card {
+    img {
+        width: 600px;
+        height: 250px;
+    }
+}
+footer {
+    justify-content: center;
+}
+}
+
+@media (min-width:$breakpoint-tablet) {
+.align-flexible-row {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.align-flexible-row-footer{
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.align-flexible-column {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px 0 50px;
+    flex-direction: column;
+}
+.restoraunts-section {
+    flex-wrap: wrap;
+}
+.card {
+    img {
+        width: 400px;
+        height: 200px;
+    }
+}
 }
