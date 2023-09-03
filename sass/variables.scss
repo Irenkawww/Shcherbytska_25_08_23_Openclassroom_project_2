@@ -6,7 +6,7 @@ $footer-background-color: rgb(52, 52, 52);
 
 $dark-background-color: rgb(131, 131, 131);
 $middle-dark-background-color: rgba(221, 220, 220, 0.723);
-$light-background-color: rgba(243, 243, 243, 0.914);
+$light-background-color: rgb(243, 243, 243);
 $light-hover-background-color: #eadef9;
 
 $box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
@@ -15,8 +15,10 @@ $box-darker-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
 $logo-titles-fonts: 'Shrikhand',cursive;
 $text-fonts: 'Roboto',sans-serif;
 
-$titles-font-size: 20px;
-$bigger-titles-font-size: 28px;
+$titles-font-size: 24px;
+$bigger-titles-font-size: 32px;
+
+$border-radius:25px;
 
 $breakpoint-mobile: 480px;
 $breakpoint-tablet: 769px;

@@ -88,7 +88,7 @@ textarea {
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   margin: 10px;
-  background-color: rgba(243, 243, 243, 0.914);
+  background-color: rgb(243, 243, 243);
   font-weight: bolder;
 }
 
@@ -147,15 +147,6 @@ textarea {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
 }
-.card .fa-heart {
-  color: rgb(131, 131, 131);
-}
-.card .fa-heart:hover {
-  color: #9356DC;
-}
-.card .fa-heart:visited {
-  color: #9356DC;
-}
 .card .restoraunt {
   padding-left: 3px;
   color: black;
@@ -186,6 +177,18 @@ textarea {
   font-weight: lighter;
 }
 
+.fa-heart {
+  color: rgb(131, 131, 131);
+}
+
+.fa-heart:hover {
+  color: #9356DC;
+}
+
+.fa-heart:visited {
+  color: #9356DC;
+}
+
 body {
   text-align: center;
   background-color: rgba(221, 220, 220, 0.723);
@@ -193,7 +196,7 @@ body {
 }
 body h1 {
   padding: 20px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .loader-container {
@@ -214,8 +217,8 @@ body h1 {
   background-color: rgb(255, 255, 255);
   z-index: 9999;
   opacity: 100%;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .loader {
@@ -256,10 +259,22 @@ header {
   background-color: white;
 }
 header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Shrikhand", cursive;
   font-weight: 300;
-  font-size: 20px;
-  margin: 15px;
+  font-size: 24px;
   color: black;
 }
 header a:hover {
@@ -272,7 +287,7 @@ header a:hover {
 }
 
 .bookAndExplore {
-  background-color: rgba(243, 243, 243, 0.914);
+  background-color: rgb(243, 243, 243);
   padding: 0 0 40px 0;
 }
 .bookAndExplore p {
@@ -299,9 +314,17 @@ header a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.start {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.between {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .numbers {
@@ -341,7 +364,7 @@ header a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(243, 243, 243, 0.914);
+  background-color: rgb(243, 243, 243);
   text-align: left;
 }
 
@@ -384,9 +407,22 @@ footer .fa-utensils, footer .fa-handshake-angle {
   height: 16px;
 }
 footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Shrikhand", cursive;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 24px;
   padding-bottom: 10px;
 }
 
@@ -407,10 +443,10 @@ footer .logo {
             flex-direction: column;
   }
   .howItWorks h1, .restoraunts-section h1, .bookAndExplore h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
   .logo {
-    font-size: 28px;
+    font-size: 32px;
   }
   .card img {
     width: 600px;
@@ -471,4 +507,51 @@ footer .logo {
     width: 400px;
     height: 200px;
   }
+}
+header .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .menu-nav .left-aligh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+header .menu-nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.logo-style {
+  padding: 20px;
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+}
+
+.menu {
+  background-color: rgb(243, 243, 243);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  position: relative;
+  top: -30px;
+  text-align: left;
+}
+.menu hr {
+  padding: 20px;
+  width: 25px;
+  color: #99E2D0;
+  size: 3px;
+}
+
+.course-meal {
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */

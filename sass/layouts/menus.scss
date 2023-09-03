@@ -1,0 +1,36 @@
+header {
+    .menu-nav {
+        display: flex;
+        align-items: center;
+        .left-aligh {
+            display: flex;
+            flex-basis: 25%;
+        }
+        .logo {
+            display: flex;
+            flex-basis: 50%;
+        }
+    }
+}
+.logo-style {
+    @include section-space;
+    font-family: $logo-titles-fonts;
+    font-size: $titles-font-size;
+}
+.menu {
+    background-color: $light-background-color;
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+    position: relative;
+    top: -30px;
+    text-align: left;
+    hr {
+            @include section-space;
+            width: 25px;
+            color: $tertiary-color;
+            size: 3px;
+        }
+}
+.course-meal {
+    @include section-space;
+}

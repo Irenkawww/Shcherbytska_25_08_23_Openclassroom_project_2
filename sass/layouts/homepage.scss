@@ -46,7 +46,6 @@ header {
     background-color:white;
     a {
         @include logo;
-        margin: 15px;
         color:black;
     }
     a:hover {
@@ -79,8 +78,14 @@ header {
 .row {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
+    .start {
+    justify-content: flex-start;
+    }
+    .between {
+    justify-content: space-around;
+    }
+
 .numbers {
     position: relative;
     left: 18px;
