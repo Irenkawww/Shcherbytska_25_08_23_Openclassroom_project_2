@@ -19,17 +19,19 @@
   <body>
     <header><a href="#" class="logo">ohmyfood</a></header>
 
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+
     <section class="location">
       <i class="fa-solid fa-location-dot" style="color: #050505"></i> Paris,
       Belleville
     </section>
-
     <section class="bookAndExplore">
       <h1>Book the menu you like</h1>
       <p>Discover top-of-the-art restaurants we picked for you</p>
       <button class="btn">Explore our restaurants</button>
     </section>
-
     <section class="howItWorks">
       <div><h1>How it works</h1></div>
       <div>
@@ -163,5 +165,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loaderContainer = document.querySelector(".loader-container");
+
+        setTimeout(function () {
+          loaderContainer.style.opacity = "0";
+          setTimeout(function () {
+            loaderContainer.style.display = "none";
+          }, 300);
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
