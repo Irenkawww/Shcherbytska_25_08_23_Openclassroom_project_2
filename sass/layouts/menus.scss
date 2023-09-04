@@ -12,6 +12,9 @@ header {
         }
     }
 }
+main {
+    background-color: $light-background-color;
+}
 .logo-style {
     @include section-space;
     font-family: $logo-titles-fonts;
@@ -30,8 +33,10 @@ header {
     border-bottom: 2px solid $tertiary-color;
 }
 .section-one {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    width: 95%;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
@@ -39,4 +44,20 @@ header {
 .space {
   padding: 20px 20px 30px 20px;
 }
+.space-side {
+    padding: 15px 40px 15 40px;
+}
+.menulist {
+    box-shadow: $box-shadow;
+    background-color: $light-background-color;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0 10px 0;
+}
+.bold-text {
+    font-weight: bold;
+}
+
+
 

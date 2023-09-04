@@ -310,6 +310,12 @@ header a:hover {
 }
 
 .between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.around {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -507,6 +513,10 @@ header .menu-nav .logo {
       flex-basis: 50%;
 }
 
+main {
+  background-color: rgb(243, 243, 243);
+}
+
 .logo-style {
   padding: 20px;
   font-family: "Shrikhand", cursive;
@@ -528,11 +538,14 @@ header .menu-nav .logo {
 }
 
 .section-one {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 95%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -547,4 +560,22 @@ header .menu-nav .logo {
 
 .space {
   padding: 20px 20px 30px 20px;
+}
+
+.space-side {
+  padding: 15px 40px 15 40px;
+}
+
+.menulist {
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 0 10px 0;
+}
+
+.bold-text {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
