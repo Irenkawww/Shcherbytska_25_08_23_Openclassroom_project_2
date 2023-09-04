@@ -114,9 +114,11 @@ footer {
     background-color: $footer-background-color;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
     .align-flexible-row, .align-flexible-column {
-       @include align-center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     a {
     color:white;
@@ -151,9 +153,11 @@ footer {
     }
 }
 footer {
-    justify-content: center;
+    align-items: center;
+    .align-flexible-row,.align-flexible-column {
+        align-items: center;
 }
-}
+}}
 
 @media (min-width:$breakpoint-tablet) {
 .align-flexible-row {

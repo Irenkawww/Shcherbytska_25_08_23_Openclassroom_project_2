@@ -24,13 +24,19 @@ header {
     position: relative;
     top: -30px;
     text-align: left;
-    hr {
-            @include section-space;
-            width: 25px;
-            color: $tertiary-color;
-            size: 3px;
-        }
 }
 .course-meal {
-    @include section-space;
+    padding: 20px 0 10px 0;
+    border-bottom: 2px solid $tertiary-color;
 }
+.section-one {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.space {
+  padding: 20px 20px 30px 20px;
+}
+
