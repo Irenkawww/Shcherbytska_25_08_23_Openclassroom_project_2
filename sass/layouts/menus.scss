@@ -9,6 +9,7 @@ header {
         .logo {
             display: flex;
             flex-basis: 50%;
+            justify-content: center;
         }
     }
 }
@@ -44,8 +45,8 @@ main {
 .space {
   padding: 20px 20px 30px 20px;
 }
-.space-side {
-    padding: 15px 40px 15 40px;
+.bold-text {
+    font-weight: bold;
 }
 .menulist {
     box-shadow: $box-shadow;
@@ -55,9 +56,32 @@ main {
     border-radius: 15px;
     margin: 10px 0 10px 0;
 }
-.bold-text {
-    font-weight: bold;
+.one, .two, .three {
+    animation: myfirst 1.5s 1;
+    position: relative;
+    animation-timing-function: ease-in-out;
 }
+.two {
+ animation-delay: 0.5s;
+}
+.three {
+animation-delay: 1s;
+}
+@keyframes myfirst {
+    0% {
+        top: 50px;
+        opacity: 0%;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 100%;
+    }
+}
+.done {
+ display: flex;
+}
+
 
 
 

@@ -46,7 +46,12 @@ header {
     background-color:white;
     a {
         @include logo;
+        text-align: center;
         color:black;
+        .logo {
+        display: flex;
+        justify-content: center;
+        }
     }
     a:hover {
         color: black;

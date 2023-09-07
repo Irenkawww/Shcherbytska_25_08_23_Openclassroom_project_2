@@ -61,7 +61,7 @@ textarea {
   margin: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(#9356DC), color-stop(51%, #FF79DA), to(#9356DC));
   background-image: linear-gradient(to right, #9356DC 0%, #FF79DA 51%, #9356DC 100%);
-  padding: 15px 45px;
+  padding: 15px 85px;
   text-align: center;
   font-size: 20px;
   -webkit-transition: 0.5s;
@@ -262,7 +262,16 @@ header a {
   font-family: "Shrikhand", cursive;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
   color: black;
+}
+header a .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header a:hover {
   color: black;
@@ -511,6 +520,9 @@ header .menu-nav .logo {
   display: flex;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main {
@@ -562,8 +574,8 @@ main {
   padding: 20px 20px 30px 20px;
 }
 
-.space-side {
-  padding: 15px 40px 15 40px;
+.bold-text {
+  font-weight: bold;
 }
 
 .menulist {
@@ -576,6 +588,47 @@ main {
   margin: 10px 0 10px 0;
 }
 
-.bold-text {
-  font-weight: bold;
+.one, .two, .three {
+  -webkit-animation: myfirst 1.5s 1;
+          animation: myfirst 1.5s 1;
+  position: relative;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.two {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.three {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    top: 50px;
+    opacity: 0%;
+  }
+  100% {
+    top: 0px;
+    opacity: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    top: 50px;
+    opacity: 0%;
+  }
+  100% {
+    top: 0px;
+    opacity: 100%;
+  }
+}
+.done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
