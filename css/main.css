@@ -551,13 +551,21 @@ main {
   border-bottom: 2px solid #99E2D0;
 }
 
+.space {
+  padding: 20px 20px 30px 20px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
 .section-one {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -567,25 +575,14 @@ main {
           flex-direction: column;
 }
 
-.column {
+.row-animation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.space {
-  padding: 20px 20px 30px 20px;
-}
-
-.bold-text {
-  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 
 .menulist {
@@ -598,55 +595,24 @@ main {
   margin: 10px 0 10px 0;
 }
 .menulist:hover + .done {
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  -webkit-transition: visibility 500ms, width 500ms;
+  transition: visibility 500ms, width 500ms;
+  visibility: visible;
+  width: 50px;
 }
-.menulist:hover + .done span {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.menulist:hover {
+  -webkit-transition: margin-right 500ms, padding-right 500ms;
+  transition: margin-right 500ms, padding-right 500ms;
+  padding-right: 35px;
+  margin-right: 50px;
 }
 
-.done {
-  background-color: #99E2D0;
-  width: 40px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  -webkit-transform: scale(0.005);
-          transform: scale(0.005);
-  -webkit-transition: -webkit-transform 330ms ease-in-out;
-  transition: -webkit-transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+.one,
+.two,
+.three {
+  width: 300px;
   overflow: hidden;
-}
-.done i {
-  padding: 1px;
-}
-.done span {
-  display: inline-block;
-  -webkit-transform: translateX(250%);
-          transform: translateX(250%);
-  -webkit-transition: -webkit-transform 280ms ease-out 50ms;
-  transition: -webkit-transform 280ms ease-out 50ms;
-  transition: transform 280ms ease-out 50ms;
-  transition: transform 280ms ease-out 50ms, -webkit-transform 280ms ease-out 50ms;
-}
-
-.row-animation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-.one, .two, .three {
+  background: white;
   -webkit-animation: myfirst 0.9s 1;
           animation: myfirst 0.9s 1;
   position: relative;
@@ -684,4 +650,44 @@ main {
     top: 0px;
     opacity: 100%;
   }
+}
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.done {
+  background-color: #99E2D0;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  line-height: 3em;
+  visibility: hidden;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-animation i {
+  padding: 3px;
 }/*# sourceMappingURL=main.css.map */
