@@ -745,6 +745,9 @@ main {
     width: 33%;
     float: left;
   }
+  .name {
+    font-size: 48px;
+  }
 }
 @media (min-width: 769px) {
   .img {

@@ -169,6 +169,9 @@ main {
     width: 33%;
     float: left;
   }
+  .name {
+    font-size: 48px;
+  }
 }
 
 @media (min-width:$breakpoint-tablet) {
