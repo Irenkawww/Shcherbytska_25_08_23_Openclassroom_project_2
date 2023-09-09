@@ -595,10 +595,19 @@ main {
   margin: 10px 0 10px 0;
 }
 .menulist:hover + .done {
-  -webkit-transition: visibility 500ms, width 500ms;
-  transition: visibility 500ms, width 500ms;
+  -webkit-transition: visibility 200ms, width 500ms, -webkit-box-pack 500ms;
+  transition: visibility 200ms, width 500ms, -webkit-box-pack 500ms;
+  transition: visibility 200ms, width 500ms, justify-content 500ms;
+  transition: visibility 200ms, width 500ms, justify-content 500ms, -webkit-box-pack 500ms, -ms-flex-pack 500ms;
   visibility: visible;
   width: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.menulist:hover + .done i {
+  -webkit-animation: rotate 500ms linear;
+          animation: rotate 500ms linear;
 }
 .menulist:hover {
   -webkit-transition: margin-right 500ms, padding-right 500ms;
@@ -607,6 +616,27 @@ main {
   margin-right: 50px;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
 .one,
 .two,
 .three {
@@ -667,18 +697,25 @@ main {
 
 .done {
   background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   width: 0px;
   position: absolute;
   top: 0;
   right: 0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   margin: 10px 0 10px 0;
   padding: 10px;
-  line-height: 3em;
+  height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   visibility: hidden;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
 }
 
 .truncate {
@@ -686,8 +723,4 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.row-animation i {
-  padding: 3px;
 }/*# sourceMappingURL=main.css.map */

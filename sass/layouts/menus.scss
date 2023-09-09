@@ -59,10 +59,16 @@ main {
     border-radius: 15px;
     margin: 10px 0 10px 0;
     &:hover + .done {
-        transition: visibility 500ms,
-                    width 500ms;
+        transition: visibility 200ms,
+                    width 500ms,
+                    justify-content 500ms;
+                    
         visibility: visible;
         width:50px;
+        justify-content: start;
+        i {
+                animation: rotate 500ms linear;
+            }
     }
     &:hover {
     transition: 
@@ -71,6 +77,15 @@ main {
 
     padding-right:35px;
     margin-right: 50px;
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
     }
 }
 .one,
@@ -113,17 +128,23 @@ main {
 }
 .done {
     background-color: $tertiary-color;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     width: 0px;
+
     position: absolute;
     top: 0;
     right: 0;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    
     margin: 10px 0 10px 0;
     padding: 10px;
-    line-height: 3em;
+    height: 3em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
     visibility: hidden;
-    animation-timing-function: ease-in-out;
 }
 .truncate {
   width: 250px;
@@ -131,12 +152,3 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.row-animation i {
-   padding: 3px;
-}
-
-
-
-
-
-
