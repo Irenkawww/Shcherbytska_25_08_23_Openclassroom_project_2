@@ -92,6 +92,7 @@ main {
 .two,
 .three {
     width: 300px;
+    height: 3em;
     overflow: hidden;
     background: white;
     
@@ -151,4 +152,27 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (min-width: $breakpoint-mobile) {
+  .img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  .justify::after {
+    content: "";
+    clear: both;
+    display: table;
+    align-items: center;
+}
+  .justify-one, .justify-two, .justify-three {
+    width: 33%;
+    float: left;
+  }
+}
+
+@media (min-width:$breakpoint-tablet) {
+.img {
+        height: 50%;
+    }
 }

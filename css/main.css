@@ -641,6 +641,7 @@ main {
 .two,
 .three {
   width: 300px;
+  height: 3em;
   overflow: hidden;
   background: white;
   -webkit-animation: myfirst 0.9s 1;
@@ -723,4 +724,30 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (min-width: 480px) {
+  .img {
+    max-width: 100%;
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .justify::after {
+    content: "";
+    clear: both;
+    display: table;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .justify-one, .justify-two, .justify-three {
+    width: 33%;
+    float: left;
+  }
+}
+@media (min-width: 769px) {
+  .img {
+    height: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */
