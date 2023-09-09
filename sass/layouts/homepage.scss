@@ -2,7 +2,7 @@ body {
     text-align: center;
     background-color: $middle-dark-background-color;
     font-family: $text-fonts;
-    h1 {
+    h1, h2 {
         @include section-space;
         font-size: $titles-font-size;
     }
