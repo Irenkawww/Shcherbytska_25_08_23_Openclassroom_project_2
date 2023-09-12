@@ -1,8 +1,14 @@
-body {
+body{
+    background-color: $middle-dark-background-color;
+}
+.body{
+    display: block;
+    margin: auto;
     text-align: center;
     background-color: $middle-dark-background-color;
     font-family: $text-fonts;
-    h1, h2 {
+    h1,
+    h2 {
         @include section-space;
         font-size: $titles-font-size;
     }
@@ -146,7 +152,7 @@ footer {
 }
 
 @media (min-width: $breakpoint-mobile) {
-.howItWorks, .restoraunts-section, .bookAndExplore {
+   .howItWorks, .restoraunts-section, .bookAndExplore {
     @include align-center;
     h1 {
         font-size: $bigger-titles-font-size;
@@ -169,6 +175,10 @@ footer {
 }}
 
 @media (min-width:$breakpoint-tablet) {
+    .body {
+            width: 80%;
+            box-shadow: $box-darker-shadow;
+        }
 .align-flexible-row {
     max-width: 900px;
     display: flex;

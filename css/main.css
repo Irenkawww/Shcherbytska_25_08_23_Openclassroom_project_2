@@ -221,11 +221,18 @@ textarea {
 }
 
 body {
+  background-color: rgb(228, 226, 226);
+}
+
+.body {
+  display: block;
+  margin: auto;
   text-align: center;
-  background-color: rgba(221, 220, 220, 0.723);
+  background-color: rgb(228, 226, 226);
   font-family: "Roboto", sans-serif;
 }
-body h1, body h2 {
+.body h1,
+.body h2 {
   padding: 20px;
   font-size: 24px;
 }
@@ -483,6 +490,11 @@ footer .logo {
   }
 }
 @media (min-width: 769px) {
+  .body {
+    width: 80%;
+    -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+  }
   .align-flexible-row {
     max-width: 900px;
     display: -webkit-box;
