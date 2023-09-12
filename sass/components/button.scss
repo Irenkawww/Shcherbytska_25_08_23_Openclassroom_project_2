@@ -1,6 +1,41 @@
 .btn {
     display: block;
     margin: auto;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    border-radius: 25px;
+    box-shadow: $box-shadow;
+    background-color: $primary-color;
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+        &::after {
+            opacity: 1;
+            box-shadow: $box-darker-shadow;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, lighten($primary-color, 5) 0%, darken($secondary-color, 10) 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 500ms;
+        border-radius: 25px;
+    }
+}
+
+/*.btn {
+    display: block;
+    margin: auto;
     background-image: linear-gradient(to right, $primary-color 0%, $secondary-color 51%, $primary-color 100%);
     padding: 15px 85px;
     text-align: center;
@@ -11,9 +46,11 @@
     border-radius: 25px;
     box-shadow: $box-shadow;
 }
+
 .btn:hover {
     background-position: right center;
     color: #fff;
     text-decoration: none;
     box-shadow: $box-darker-shadow;
-}
+} 
+*/
