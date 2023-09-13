@@ -61,23 +61,16 @@ main {
     padding: 10px;
     border-radius: 15px;
     margin: 10px 0 10px 0;
+    transition: all 500ms;
+    
     &:hover + .done {
-        transition: visibility 200ms,
-                    width 500ms,
-                    justify-content 500ms;
-                    
         visibility: visible;
-        width:50px;
-        justify-content: start;
+        width: 60px;
         i {
-                animation: rotate 500ms linear;
-            }
+        animation: rotate 500ms;
+        }
     }
     &:hover {
-    transition: 
-       margin-right 500ms,
-       padding-right 500ms;
-
     padding-right:35px;
     margin-right: 50px;
     }
@@ -86,10 +79,29 @@ main {
     0% {
         transform: rotate(0turn);
     }
-
     100% {
         transform: rotate(1turn);
     }
+}
+.done {
+    background-color: $tertiary-color;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 10px 0 10px 0;
+    padding: 10px 5px 10px 5px;
+    height: 3em;
+
+    display: flex;
+    align-items: center;
+    
+    transition: all 500ms;
+    visibility: hidden;
+    width: 0px;
 }
 .one,
 .two,
@@ -129,26 +141,6 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-}
-.done {
-    background-color: $tertiary-color;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: 0px;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-    margin: 10px 0 10px 0;
-    padding: 10px;
-    height: 3em;
-    
-    display: flex;
-    align-items: center;
-    justify-content: end;
-
-    visibility: hidden;
 }
 .truncate {
   width: 100%;
