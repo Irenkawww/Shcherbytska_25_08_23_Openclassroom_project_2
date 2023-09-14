@@ -201,25 +201,37 @@ textarea {
           align-items: center;
   padding: 13px;
 }
-.card .restaurant-name {
+.card .text-heart .restaurant-name {
   font-weight: bold;
 }
-.card .restaurant-location {
+.card .text-heart .restaurant-location {
   font-weight: lighter;
 }
-
-.fa-heart {
+.card .text-heart .fa-heart {
   color: rgb(131, 131, 131);
 }
-
-.fa-heart:hover {
-  color: #9356DC;
+.card .text-heart .fa-heart:hover {
+  -webkit-animation: heartColorChange 5s ease-in-out;
+          animation: heartColorChange 5s ease-in-out;
 }
 
-.fa-heart:visited {
-  color: #9356DC;
+@-webkit-keyframes heartColorChange {
+  0% {
+    color: #9356DC;
+  }
+  100% {
+    color: #FF79DA;
+  }
 }
 
+@keyframes heartColorChange {
+  0% {
+    color: #9356DC;
+  }
+  100% {
+    color: #FF79DA;
+  }
+}
 body {
   background-color: rgb(228, 226, 226);
 }

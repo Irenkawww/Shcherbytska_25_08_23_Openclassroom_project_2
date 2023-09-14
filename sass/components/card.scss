@@ -39,22 +39,29 @@
         justify-content: space-between;
         align-items: center;
         padding: 13px;
-    }
     .restaurant-name {
-       font-weight: bold;
-    }
+        font-weight: bold;
+        }
     .restaurant-location {
-       font-weight: lighter;
+        font-weight: lighter;
+        }
+    .fa-heart {
+        color: $dark-background-color;
+    }
+    .fa-heart:hover {
+        animation: heartColorChange 5s ease-in-out; 
     }
 }
-.fa-heart {
-    color: $dark-background-color;
 }
+    @keyframes heartColorChange {
+        0% {
+            color: $primary-color;
+        }
+        100% {
+            color: $secondary-color;
+        }
+    }    
+    
 
-.fa-heart:hover {
-    color: $primary-color;
-}
-
-.fa-heart:visited {
-    color: $primary-color;
-}
+    
+    
