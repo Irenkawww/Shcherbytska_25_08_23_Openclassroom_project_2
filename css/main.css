@@ -571,7 +571,13 @@ header .menu-nav .logo {
 }
 
 img {
+  height: 300px;
   width: 100%;
+}
+
+.img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main {
@@ -647,7 +653,8 @@ main {
   visibility: visible;
   width: 60px;
 }
-.menulist:hover + .done i {
+.menulist:hover + .done .box {
+  opacity: 100%;
   -webkit-animation: rotate 500ms;
           animation: rotate 500ms;
 }
@@ -677,6 +684,12 @@ main {
             transform: rotate(1turn);
   }
 }
+.box {
+  opacity: 0%;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
 .done {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
