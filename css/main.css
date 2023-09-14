@@ -513,7 +513,7 @@ footer .logo {
 }
 @media (min-width: 769px) {
   .body {
-    width: 80%;
+    width: 90%;
     -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
             box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
   }
