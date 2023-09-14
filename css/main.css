@@ -157,6 +157,16 @@ textarea {
   border-radius: 25px;
   -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.card .new {
+  padding: 5px 25px;
+  background-color: #99E2D0;
+  border: 1px solid #99E2D0;
+  color: #2f836e;
+  position: absolute;
+  right: 15px;
+  top: 15px;
 }
 .card a {
   background-color: white;
