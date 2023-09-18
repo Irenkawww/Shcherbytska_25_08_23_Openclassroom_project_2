@@ -200,8 +200,8 @@ textarea {
   color: rgb(131, 131, 131);
 }
 .card .text-heart .fa-heart:hover {
-  -webkit-animation: heartColorChange 5s ease-in-out;
-          animation: heartColorChange 5s ease-in-out;
+  -webkit-animation: heartColorChange 5s ease-in-out both;
+          animation: heartColorChange 5s ease-in-out both;
 }
 
 @-webkit-keyframes heartColorChange {

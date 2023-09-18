@@ -59,7 +59,7 @@
         color: $dark-background-color;
     }
     .fa-heart:hover {
-        animation: heartColorChange 5s ease-in-out; 
+        animation: heartColorChange 5s ease-in-out both; 
     }
 }
 }
